@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" id="HTML">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" En esta pagina puedes consultar la hora en formato digital">
+    <!-- Sirve para que al buscar en google  la pagina, aparezca una pequqña 
+        descripcion de la pagina
+    -->
+    <script src="reloj.js"></script>
+    <meta name="robots" cotent="index,follow">
+    <!-- Este meta ayuda a posicionar la pagina en las busqueda especificas
+        y puedan ser mas visibles aunqse no garantiza que todos los motores de busqueda sigan la orden -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="mobile_reloj.css">
+    <link rel="stylesheet" href="table_reloj.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="pc_reloj.css" media="screen and (min-width: 1100px)">
+
+    <!--Importante los espacios al escribir screen_and_-->
+
+    <title>Reloj Digital</title>
+</head>
+
+<body>
+
+    <head>
+        <div class="img"><img src="Logo.png" id="img" alt=""> </div>
+        <h1> Bienvenidos </h1>
+    </head>
+    <main>
+        <p class="p_utc">Fecha y Horario UTC " Tiempo coordiando universal "</p>
+        <!-- Hora Utc-->
+        <div class="resutc"></div>
+        <p class=" p_local">Fecha y Horario Local</p>
+        <!-- Hora Local-->
+        <div class="reslocal"></div>
+
+        <section class="sec_hora">
+            <div class="horas"></div>
+            <div>:</div>
+            <div class="minutos"></div>
+            <div>:</div>
+            <div class="segundos"></div>
+        </section>
+    </main>
+    <script src="reloj.js"></script>
+</body>
+
+</html>
